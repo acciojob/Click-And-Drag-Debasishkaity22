@@ -2,7 +2,7 @@
 let isMouseDown = false;
 let startX, scrollLeft;
 let items=document.querySelector(".items");
-items.addEventListener("mousedown",function(){
+items.addEventListener("mousedown",function(e){
 	isMouseDown = true;
   startX = e.pageX - items.offsetLeft;
   scrollLeft = items.scrollLeft;
